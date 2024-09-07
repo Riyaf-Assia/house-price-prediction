@@ -1,0 +1,102 @@
+/* Make sure the body takes full height and allows scrolling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+body {
+    background-image: url('house.jpg'); /* Use your image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(8px); /* Blurs the background image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title positioned at the top-left corner */
+/* Title positioned at the top-left corner */
+.title {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Main container for form elements */
+.container {
+    width: 450px; /* Increase width for more space between form elements */
+    margin: 150px auto 0 auto; /* Center the container and add margin from the top */
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    padding: 40px; /* Increase padding for more space between the elements and container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Space between form elements */
+.input-group {
+    margin-bottom: 20px; /* Increase space between form elements */
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: black;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+/* Align and style the estimated price container */
+.result {
+    margin: 20px auto 0 auto; /* Align with the main form container */
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 450px; /* Match the width of the main container */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.estimate {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    color: black;
+}
+
+#price {
+    font-size: 18px;
+    color: black;
+}
+
+button {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    background-color: lightyellow;
+}

@@ -1,0 +1,3 @@
+# Ignore specific pickle files
+/Flask_Server/my_model.pickle
+/model/my_model.pickle

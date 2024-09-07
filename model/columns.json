@@ -1,0 +1,1 @@
+{"data_cols": ["housing_median_age_z_score", "rooms_per_household_z_score", "bedrooms_per_household_z_score", "households_log_z_score", "median_income_log_z_score", "population_per_household_log_z_score", "ocean_proximity_inland", "ocean_proximity_near bay", "ocean_proximity_near ocean", "sqrt_median_house_value", "lat_long_z_score"]}

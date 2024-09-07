@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src ="page.js"></script>
+    <link rel="stylesheet" href="page.css">
+    <title>Home Price Prediction</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Predict your Home Price</h1>
+    </div>
+
+    <div class="container">
+        <form>
+            <div class="input-group">
+                <label for="longitude">Longitude</label>
+                <input type="text" id="longitude" placeholder="Enter longitude">
+            </div>
+
+            <div class="input-group">
+                <label for="latitude">Latitude</label>
+                <input type="text" id="latitude" placeholder="Enter latitude">
+            </div>
+
+            <div class="input-group">
+                <label for="housing-median-age">Housing Median Age</label>
+                <input type="text" id="housing-median-age" placeholder="Enter housing age">
+            </div>
+
+            <div class="input-group">
+                <label for="total-rooms">Total Rooms</label>
+                <input type="text" id="total-rooms" placeholder="Enter total rooms">
+            </div>
+
+            <div class="input-group">
+                <label for="total-bedrooms">Total Bedrooms</label>
+                <input type="text" id="total-bedrooms" placeholder="Enter total bedrooms">
+            </div>
+
+            <div class="input-group">
+                <label for="households">Households</label>
+                <input type="text" id="households" placeholder="Enter households">
+            </div>
+
+            <div class="input-group">
+                <label for="median-income">Median Income $</label>
+                <input type="text" id="median-income" placeholder="Enter median income">
+            </div>
+
+            <div class="input-group">
+                <label for="population">Population</label>
+                <input type="text" id="population" placeholder="Enter population">
+            </div>
+
+            <div class="input-group">
+                <label for="ocean-proximity">Ocean Proximity</label>
+                <select id="ocean-proximity">
+                    <option value="INLAND">INLAND</option>
+                    <option value="NEAR BAY">NEAR BAY</option>
+                    <option value="NEAR OCEAN">NEAR OCEAN</option>
+                    <option value="ISLAND">ISLAND</option>
+                </select>
+            </div>
+
+            <div class="estimate">
+               <button type="submit" onclick="estimatePrice(event)">Estimate Price</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="result">
+        <h2>Estimated Price: </h2>
+        <p id="price"></p>
+    </div>
+</body>
+</html>
